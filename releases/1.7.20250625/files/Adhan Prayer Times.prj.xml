@@ -1,0 +1,4803 @@
+<TaskerData sr="" dvi="1" tv="6.6.0-beta">
+	<Profile sr="prof519" ve="2">
+		<cdate>1750830156749</cdate>
+		<clp>true</clp>
+		<edate>1750757118584</edate>
+		<flags>8</flags>
+		<id>519</id>
+		<mid0>497</mid0>
+		<nme>APT - Widget Interaction</nme>
+		<Event sr="con0" ve="2">
+			<code>2091</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%command
+%command
+%command will be set to parameter number 2&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%layout
+%layout
+%layout will be set to parameter number 1&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%command_parameter
+Command Parameter
+First part on the right of =:=&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%command_parameters()
+Command Parameters
+List of parts on the right of =:=&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%command_prefix
+Prefix
+The part of the command on the left of =:= or the whole command if =:= is not present&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%command_text
+The full command
+The full command&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">APT=:=*</Str>
+			<Str sr="arg2" ve="3">%layout,%command</Str>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="1"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof520" ve="2">
+		<cdate>1750830156749</cdate>
+		<clp>true</clp>
+		<edate>1750757152922</edate>
+		<flags>8</flags>
+		<id>520</id>
+		<mid0>502</mid0>
+		<nme>APT - Play Time</nme>
+		<Time sr="con0">
+			<fromvar>%play_time</fromvar>
+			<tovar>%play_time</tovar>
+		</Time>
+	</Profile>
+	<Profile sr="prof565" ve="2">
+		<cdate>1750830156749</cdate>
+		<clp>true</clp>
+		<edate>1750606440113</edate>
+		<flags>8</flags>
+		<id>565</id>
+		<mid0>503</mid0>
+		<nme>APT - Reminder Time</nme>
+		<Time sr="con0">
+			<fromvar>%reminder_time</fromvar>
+			<tovar>%reminder_time</tovar>
+		</Time>
+	</Profile>
+	<Profile sr="prof566" ve="2">
+		<cdate>1750830156749</cdate>
+		<clp>true</clp>
+		<edate>1750606444180</edate>
+		<flags>8</flags>
+		<id>566</id>
+		<mid0>496</mid0>
+		<nme>APT - Stop Time</nme>
+		<Time sr="con0">
+			<fromvar>%stop_time</fromvar>
+			<tovar>%stop_time</tovar>
+		</Time>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1718814319417</cdate>
+		<name>Adhan Prayer Times</name>
+		<pc>&lt;b&gt;Adhan Prayer Times 1.7.20250625&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;What's new&lt;/b&gt;:&lt;br&gt;
+- Fixed issue where the widget instantly switched to the stop icon at play time&lt;br&gt;
+- Added a task to enable or disable widgets directly&lt;br&gt;
+- Corrected inaccurate prayer start times in prayer started notifications&lt;br&gt;
+- Resolved stop time issues in regions observing Daylight Saving Time (DST)&lt;br&gt;
+- Other bug fixes and improvements
+&lt;br&gt;&lt;br&gt;
+
+Project by &lt;font color="red"&gt;WhirlWolf&lt;/font&gt;</pc>
+		<pids>519,566,565,520</pids>
+		<tids>502,503,508,511,517,501,496,497,509,504,510,515,500,518</tids>
+		<Share sr="Share">
+			<b>false</b>
+			<d>Get reminders for adhans and optionally play when it's time.
+&lt;br&gt;&lt;br&gt;
+
+&lt;div style="display:flex; gap:2px; align-items:flex-start; padding:5px 0; overflow-x:auto; white-space:nowrap;"&gt;
+  &lt;figure style="display:flex; flex-direction:column; justify-content:flex-start; margin:0; text-align:center; border:1px solid #aaa; border-radius:4px; padding:4px; min-width:150px;"&gt;
+    &lt;img src="https://i.imgur.com/YSHwJjh.jpeg" style="max-width:100%; height:auto; border-radius:4px;"&gt;
+    &lt;figcaption style="font-size:8px;"&gt;Notification&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;figure style="display:flex; flex-direction:column; justify-content:flex-start; margin:0; text-align:center; border:1px solid #aaa; border-radius:4px; padding:4px; min-width:150px;"&gt;
+    &lt;img src="https://i.imgur.com/YoIJWqJ.jpeg" style="max-width:100%; height:auto; border-radius:4px;"&gt;
+    &lt;figcaption style="font-size:8px;"&gt;Widgets&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+&lt;br&gt;
+
+&lt;b&gt;&lt;a href=https://t.me/android_automation/90&gt;MORE INFO&lt;/a&gt;&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;a href=https://t.me/android_automation/194&gt;What's new in 1.7.20250625&lt;/a&gt;&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;a href=https://taskernet.com/?user=AS35m8m8L9YzBV3qbzaAAqHiSYXYBbD3QfZ7hr0hRK4ojOFTCrjWh2CScbjMw4NaudRi1zKKzq85&gt;My Projects&lt;/a&gt;&lt;/b&gt; | &lt;b&gt;&lt;a href=https://t.me/android_automation_group&gt;Telegram Group&lt;/a&gt;&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+
+Special Thanks:
+Mosaad Gaber
+&lt;br&gt;&lt;br&gt;
+
+&lt;u&gt;Project by &lt;font color="red"&gt;WhirlWolf&lt;/font&gt;&lt;/u&gt;</d>
+			<g>Location,Notifications,Time</g>
+			<p>true</p>
+			<t>APT - Project Setup</t>
+		</Share>
+		<Img sr="icon" ve="2">
+			<nme>mw_action_chrome_reader_mode</nme>
+			<tint>-16729856</tint>
+		</Img>
+		<ProfileVariable sr="pv0">
+			<clearout>false</clearout>
+			<exportval>{}</exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%prayer_times</pvn>
+			<pvt>t</pvt>
+			<pvv>{}</pvv>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv1">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%next_prayer_time</pvn>
+			<pvt>ti</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv10">
+			<clearout>false</clearout>
+			<exportval>false</exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%auto_play</pvn>
+			<pvt>b</pvt>
+			<pvv>false</pvv>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv11">
+			<clearout>false</clearout>
+			<exportval>{
+    "live_pill": {
+        "state": "disabled",
+        "colors": {
+            "background": "#FF005722",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#D1D5DB",
+            "icon_background": "#FF007C45"
+        },
+        "font_family": "Monospace",
+        "corner_radius": "35",
+        "icon": "android.resource://net.dinglisch.android.taskerm/drawable/mw_action_chrome_reader_mode",
+        "icon_size": "55",
+        "text_size_primary": "20",
+        "text_size_secondary": "12"
+    },
+    "day_list_small_nafilah": {
+        "state": "disabled",
+        "colors": {
+            "background": "#111827",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#9A99AF",
+            "fajr_bg": "#00000000",
+            "isha_bg": "#00000000",
+            "dhuhr_bg": "#00000000",
+            "asr_bg": "#00000000",
+            "maghrib_bg": "#00000000"
+        },
+        "font_family": "SansSerif",
+        "corner_radius": "20",
+        "text_size_primary": "17",
+        "text_size_secondary": "13",
+        "show_checkbox": "no"
+    },
+    "day_card_medium_nafilah": {
+        "state": "disabled",
+        "colors": {
+            "background": "#111827",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#9A99AF",
+            "fajr_bg": "#00000000",
+            "isha_bg": "#00000000",
+            "dhuhr_bg": "#00000000",
+            "asr_bg": "#00000000",
+            "maghrib_bg": "#00000000",
+            "icon_bg": "#FF3A3F55"
+        },
+        "icons": {
+            "fajr": "https://cdn-icons-png.flaticon.com/512/2320/2320034.png",
+            "dhuhr": "https://cdn-icons-png.flaticon.com/512/2320/2320041.png",
+            "asr": "https://cdn-icons-png.flaticon.com/512/2320/2320047.png",
+            "maghrib": "https://cdn-icons-png.flaticon.com/512/7222/7222627.png",
+            "isha": "https://cdn-icons-png.flaticon.com/512/2871/2871672.png"
+        },
+        "icon_size": "43",
+        "font_family": "SansSerif",
+        "corner_radius": "20",
+        "text_size_primary": "13",
+        "text_size_secondary": "11",
+        "text_size_title": "18"
+    }
+}</exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%widget</pvn>
+			<pvt>t</pvt>
+			<pvv>{
+    "live_pill": {
+        "state": "disabled",
+        "colors": {
+            "background": "#FF005722",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#D1D5DB",
+            "icon_background": "#FF007C45"
+        },
+        "font_family": "Monospace",
+        "corner_radius": "35",
+        "icon": "android.resource://net.dinglisch.android.taskerm/drawable/mw_action_chrome_reader_mode",
+        "icon_size": "55",
+        "text_size_primary": "20",
+        "text_size_secondary": "12"
+    },
+    "day_list_small_nafilah": {
+        "state": "disabled",
+        "colors": {
+            "background": "#111827",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#9A99AF",
+            "fajr_bg": "#00000000",
+            "isha_bg": "#00000000",
+            "dhuhr_bg": "#00000000",
+            "asr_bg": "#00000000",
+            "maghrib_bg": "#00000000"
+        },
+        "font_family": "SansSerif",
+        "corner_radius": "20",
+        "text_size_primary": "17",
+        "text_size_secondary": "13",
+        "show_checkbox": "no"
+    },
+    "day_card_medium_nafilah": {
+        "state": "disabled",
+        "colors": {
+            "background": "#111827",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#9A99AF",
+            "fajr_bg": "#00000000",
+            "isha_bg": "#00000000",
+            "dhuhr_bg": "#00000000",
+            "asr_bg": "#00000000",
+            "maghrib_bg": "#00000000",
+            "icon_bg": "#FF3A3F55"
+        },
+        "icons": {
+            "fajr": "https://cdn-icons-png.flaticon.com/512/2320/2320034.png",
+            "dhuhr": "https://cdn-icons-png.flaticon.com/512/2320/2320041.png",
+            "asr": "https://cdn-icons-png.flaticon.com/512/2320/2320047.png",
+            "maghrib": "https://cdn-icons-png.flaticon.com/512/7222/7222627.png",
+            "isha": "https://cdn-icons-png.flaticon.com/512/2871/2871672.png"
+        },
+        "icon_size": "43",
+        "font_family": "SansSerif",
+        "corner_radius": "20",
+        "text_size_primary": "13",
+        "text_size_secondary": "11",
+        "text_size_title": "18"
+    }
+}</pvv>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv12">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%reminder_time</pvn>
+			<pvt>ti</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv13">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%this_prayer_time</pvn>
+			<pvt>ti</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv2">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%coordinates</pvn>
+			<pvt>t</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv3">
+			<clearout>false</clearout>
+			<exportval>10</exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd>Time before prayer (in minutes) to get notified!</pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%remind_before</pvn>
+			<pvt>n</pvt>
+			<pvv>10</pvv>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv4">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%play_time</pvn>
+			<pvt>ti</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv5">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%audio</pvn>
+			<pvt>f</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv6">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%stop_time</pvn>
+			<pvt>ti</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv7">
+			<clearout>false</clearout>
+			<exportval>120</exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%duration</pvn>
+			<pvt>n</pvt>
+			<pvv>120</pvv>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv8">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%next_prayer</pvn>
+			<pvt>t</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv9">
+			<clearout>false</clearout>
+			<exportval></exportval>
+			<immutable>false</immutable>
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>46</pvid>
+			<pvit>pj</pvit>
+			<pvn>%this_prayer</pvn>
+			<pvt>t</pvt>
+			<strout>true</strout>
+		</ProfileVariable>
+	</Project>
+	<Task sr="task496">
+		<cdate>1721016072580</cdate>
+		<edate>1750606444180</edate>
+		<id>496</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">%this_prayer time</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">Playing %this_prayer</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%this_prayer</Str>
+			<Str sr="arg1" ve="3">%next_prayer</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%this_prayer_time</Str>
+			<Str sr="arg1" ve="3">%next_prayer_time</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%duration</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%next_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%this_prayer at %formatted</Str>
+			<Str sr="arg3" ve="3">Hijri: %prayer_times.date.hijri</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task497">
+		<cdate>1743841099615</cdate>
+		<edate>1750757118584</edate>
+		<id>497</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%command</lhs>
+					<op>2</op>
+					<rhs>*reader*/preferences</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_long
+Long
+true if item was long clicked, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ld_selected_index
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg13" ve="3"/>
+			<Str sr="arg2" ve="3">Adhan Prayer Times Preferences</Str>
+			<Str sr="arg3" ve="3">Toggle Auto Play (%auto_play),Customize Widget</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3">Cancel</Str>
+			<Int sr="arg9" val="120"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Customise Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%layout</Str>
+			<Str sr="arg3" ve="3">%command</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>Customize Widget</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Toggle Auto Play</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>Toggle Auto Play (%auto_play)</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Set To Play</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%layout</Str>
+			<Str sr="arg3" ve="3">%command</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%command</lhs>
+					<op>2</op>
+					<rhs>*play*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Stop Playing</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%layout</Str>
+			<Str sr="arg3" ve="3">%command</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%command</lhs>
+					<op>2</op>
+					<rhs>*stop*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task500">
+		<cdate>1718814501910</cdate>
+		<edate>1750830871336</edate>
+		<id>500</id>
+		<nme>APT - Project Setup</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>391</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%pd_type
+Type
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg3" ve="3">Getting location...</Str>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="66"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="100"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>tasker thing when updating project</label>
+			<Str sr="arg0" ve="3">%widget</Str>
+			<Str sr="arg1" ve="3">{
+    "live_pill": {
+        "state": "disabled",
+        "colors": {
+            "background": "#FF005722",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#D1D5DB",
+            "icon_background": "#FF007C45"
+        },
+        "font_family": "Monospace",
+        "corner_radius": "35",
+        "icon": "android.resource://net.dinglisch.android.taskerm/drawable/mw_action_chrome_reader_mode",
+        "icon_size": "55",
+        "text_size_primary": "20",
+        "text_size_secondary": "12"
+    },
+    "day_list_small_nafilah": {
+        "state": "disabled",
+        "colors": {
+            "background": "#111827",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#9A99AF",
+            "fajr_bg": "#00000000",
+            "isha_bg": "#00000000",
+            "dhuhr_bg": "#00000000",
+            "asr_bg": "#00000000",
+            "maghrib_bg": "#00000000"
+        },
+        "font_family": "SansSerif",
+        "corner_radius": "20",
+        "text_size_primary": "17",
+        "text_size_secondary": "13",
+        "show_checkbox": "no"
+    },
+    "day_card_medium_nafilah": {
+        "state": "disabled",
+        "colors": {
+            "background": "#111827",
+            "text_primary": "#FFFFFF",
+            "text_secondary": "#9A99AF",
+            "fajr_bg": "#00000000",
+            "isha_bg": "#00000000",
+            "dhuhr_bg": "#00000000",
+            "asr_bg": "#00000000",
+            "maghrib_bg": "#00000000",
+            "icon_bg": "#FF3A3F55"
+        },
+        "icons": {
+            "fajr": "https://cdn-icons-png.flaticon.com/512/2320/2320034.png",
+            "dhuhr": "https://cdn-icons-png.flaticon.com/512/2320/2320041.png",
+            "asr": "https://cdn-icons-png.flaticon.com/512/2320/2320047.png",
+            "maghrib": "https://cdn-icons-png.flaticon.com/512/7222/7222627.png",
+            "isha": "https://cdn-icons-png.flaticon.com/512/2871/2871672.png"
+        },
+        "icon_size": "43",
+        "font_family": "SansSerif",
+        "corner_radius": "20",
+        "text_size_primary": "13",
+        "text_size_secondary": "11",
+        "text_size_title": "18"
+    }
+}</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Reminder offset</Str>
+			<Str sr="arg2" ve="3">Time in minutes to remind before the prayer.</Str>
+			<Str sr="arg3" ve="3">10</Str>
+			<Int sr="arg4" val="120"/>
+			<Str sr="arg5" ve="3">2</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Str sr="arg8" ve="3"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%remind_before</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Prayer Details</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>391</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%pd_type
+Type
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="66"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="100"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_long
+Long
+true if item was long clicked, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ld_selected_index
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg13" ve="3">&lt;font color="grey"&gt;Selected adhan will be downloaded. It can be played at prayer time.
+&lt;br&gt;&lt;br&gt;
+If you do not set/select adhan, the project might not work correctly.&lt;/font&gt;</Str>
+			<Str sr="arg2" ve="3">Popular Adhans</Str>
+			<Str sr="arg3" ve="3">Ahmad Al Nafees,Another Mishary Rashid Alafasy Adhan,Dubai_s One TV by Mishary Rashid Alafasy,Hafiz Mustafa Özcan from Turkey,Karl Jenkins_ The Armed Man (Mass for Peace),Masjid Al-Haram in Mecca,Mishary Rashid Alafasy,Qari Abdul Kareem,Salah Mansoor Az-Zahrani,Sheikh Jamac Hareed,SELECT FROM STORAGE</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">SKIP</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="120"/>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">ttt</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_button</lhs>
+					<op>2</op>
+					<rhs>SKIP</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected_index</lhs>
+					<op>2</op>
+					<rhs>11</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>390</code>
+			<label>sss</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">File</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="120"/>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%audio</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Set audio to %audio</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%LOCN</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%urls</Str>
+			<Str sr="arg1" ve="3">https://lcu9mw.am.files.1drv.com/y4minpI-Ltom99lKHQQ6hcHfXQu0Sub4QB4rdho2nCnsRl2NPIAQen3d-mtQfm1S2qbhve6V5soavtUw5w1xVrW8ARUhuefgBB-kSH-TWXUwVAqkWCRHBGlk57z9zBM5_uQPFphPXrWlQTfw9fyz6D7qladXZLf97knxAM6541tJ-Qd00nGkCx_wDwk5pRVmlCLoGWP0NNctHPqUBOHZ0qlfQ,https://lcu9mw.am.files.1drv.com/y4mRnFolLzy9sUMnVCKvgyNKXwSZU1C4Hj99MwNzk1eFmoGiiz6gj2hPB3ZqhxjfRwrF1sqrDqUDa1JEl3KYxku8YVXYqzhuPc1nxpPphRKyBkhQzIeZ0f6irDYtSKnplOanFBQ6X5I3qioGewQ8sc2hjfK5Pxk33FU8h9oS1wbBT1uP3v8DFPyq4PU_Ud5BNtRbVyZmAnuD1-OvdDjEiJdhA,https://lcu9mw.am.files.1drv.com/y4m-DdTD1KWYEmEKt_SDrrfjnzjyTh3-AKXOe9vKTXOXTU5GE5KCM0lMtw9W2Q9h88vMJ0fGZQ-Yfqei9FKz7-eb5SFWyndIV4p5Gbh_Z9X7_KRjQ-mvsWcXuMh7pdLKYMDL6E-tPbV0KCs_UIHdV-EvUQ7XRhzMP3bbQ400_aI6UA-uYFWixdh-03rf19hTVraONeBdeoa1IgLqxZyxPlArA,https://lcu9mw.am.files.1drv.com/y4mlSVnvl6a6aFs0Jvcmbezw1TC-gh0UuKk57d3cRCPErpxBJwy4w9tJTuus6lbk8ol4PCmSxT4ggb-4quJ1SjnvyMqrnaAnvA58dPwHC1_xu8vxb9kFQnG1kFUfNzfQHqq0Gx9-GnfkYO3gi8w0U6Xa7KCiWTU1E1dqwpsOoDO12uI4NqOkeCSbI4o1YelXZByJHuB4iKFaL-4Zs4ZjT5rpA,https://lcu9mw.am.files.1drv.com/y4mkW7CO0wVQAZvC6-Qr0koWAhB23vl_L_GNx65SJ16XUSDIIGmv-eYwEHL80b-XHA69wxEW6Twx7m1nYRObo20KOByA1vkdev-EGJda9almZiAvD-cVQvk3EVPqK_TlNXyKkO0bg-cKaXnMUOzbYZeeknw5HGuzzyodoyfr8ussXwBVEUci8w33Jb8EBjl2ADRr04jRoNshMjBklWSVbpc2A,https://lcu9mw.am.files.1drv.com/y4mnOpFtyjGCE9wr7_IQeZLK6Ne3jR14aB0SxFh6Vy3SKfElQ-jDT2sf8TqpF2LFZHBqFjhlSZcEQoVtJNZa8nEqAGKT4X9McwpC4amKQa_iuwpK1kUxWCiFhqaAAchvRguBWoDgazNpquZJRgvGqEJVmIYUXSShoxWG-JyjiDl9mCNOom_my48IGrN5seDjm_MKiK8YQn4x9eWLp_DgI_5Mg,https://lcu9mw.am.files.1drv.com/y4mrlE2FE_nPRVP47qozcGe8AMJuHsaipXowtPH6vtPq-mWdgtXSXpiK9nQpA8SWDTbEB2RiZR6wGhoEjVzlX3GjEjq88f0b2mzASmXPBHW_hbt_BHQ_LiVySlSrsXOGeQfhOUZwVNgzyjKtBQhDnd3SmFPE8krGwGODizaK4QXsOrFvZ1nB0GMzLLvYoin39z0msl_T2GT5f3WbiAm9mg07g,https://lcu9mw.am.files.1drv.com/y4muhUTrYjx4raeQeM6uZ7U03WYT29rxqd9qflXDoRZTwkP2LtZRUosx2YImeRGf6veEY5OIgiwiCJyj9x2twRiAWPBhwjBiGnedq3pZ-d5XxKjcsgXuOt3bRWcmJNSHumxjb9vFe6xDUlJ-DLTU3tMIBjml_xgPEpY50KmADhHEnRZEBr9waFOcfp6TpwiTTxuTvzWwI6_MH,https://lcu9mw.am.files.1drv.com/y4m5IucnMRjlA8L98vxyzACdi4QTrJrJksxNe7mabAmgweBWGXQ-ztMN-w38cTlm2o_FNmXIL2sA9HWh_z7I1BOVQvNvPB7qZ5wik7gfuftezgkus8yxgwheagSdgu5_9UTHoeAnhRN3gFquQAMiOfGQLVf-UnTDSCt5l20zNniQgQ28xl_eRxI6mMtJw0TuK-Ak6sLcGmsvRlQ1ntF1hQkwg,https://lcu9mw.am.files.1drv.com/y4m-MaxWbXtSN_ShienhY8z_08xLphMXZsuKM26jQKfThw5keL_XezW8Fa6UehB2OTxpqTsfDXgSaZkApS2ExF5gnZ6NGUZHQDxWARDsAG4VoXC7ZT6a7ebpdWzKSaDc0LcXbatqexMwQyUsTWRvRx1d3Xt76nW2wzmD9KWPDBi-qx1bYqMddgsUZo2HEAmFlxt2KuLSnA1J5cJ_zqRZofSQw</Str>
+			<Str sr="arg2" ve="3">,</Str>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%url</Str>
+			<Str sr="arg1" ve="3">%urls(%ld_selected_index)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%audio</Str>
+			<Str sr="arg1" ve="3">Tasker/database/Adhan Prayer Times/%ld_selected.mp3</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>391</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%pd_type
+Type
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg3" ve="3">Downloading %ld_selected.mp3</Str>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="66"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="100"/>
+		</Action>
+		<Action sr="act25" ve="7">
+			<code>339</code>
+			<se>false</se>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">%url</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3">%audio</Str>
+			<Int sr="arg8" val="30"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>391</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%pd_type
+Type
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="66"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="100"/>
+		</Action>
+		<Action sr="act27" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%http_response_code</lhs>
+					<op>2</op>
+					<rhs>200</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act28" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Downloaded and set audio to %ld_selected.mp3</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act29" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>396</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%lat
+0. Lat
+Can also be accessed as an array&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%lon
+0. Lon
+Can also be accessed as an array&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%mt_match_found
+Is Match
+true if there was a match, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%mt_match
+Match
+Can also be accessed as an array&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">%LOCN</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">$lat,$lon</Str>
+		</Action>
+		<Action sr="act30" ve="7">
+			<code>377</code>
+			<se>false</se>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%td_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Download Failed</Str>
+			<Str sr="arg2" ve="3">Couldn't download %ld_selected.mp3
+
+Error: %http_response_code
+
+If you do not set/select adhan, the project might not work correctly.</Str>
+			<Str sr="arg3" ve="3">SELECT FROM STORAGE</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">SKIP ANYWAY</Str>
+			<Int sr="arg6" val="120"/>
+			<Int sr="arg7" val="0"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act31" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">sss</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%td_button</lhs>
+					<op>2</op>
+					<rhs>SELECT FROM STORAGE</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act32" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">ttt</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%td_button</lhs>
+					<op>2</op>
+					<rhs>SKIP ANYWAY</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act33" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act34" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act35" ve="7">
+			<code>343</code>
+			<Int sr="arg0" val="1"/>
+			<Str sr="arg1" ve="3">%audio</Str>
+			<Str sr="arg2" ve="3">%duration</Str>
+		</Action>
+		<Action sr="act36" ve="7">
+			<code>590</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%duration</Str>
+			<Str sr="arg1" ve="3">:</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act37" ve="7">
+			<code>547</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%duration</Str>
+			<Str sr="arg1" ve="3">%duration1*60+%duration2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act38" ve="7">
+			<code>377</code>
+			<label>ttt</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%td_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Enable Auto Play for Prayers?</Str>
+			<Str sr="arg2" ve="3">Current preference: %auto_play</Str>
+			<Str sr="arg3" ve="3">Yes</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">No</Str>
+			<Int sr="arg6" val="120"/>
+			<Int sr="arg7" val="0"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act39" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%auto_play</Str>
+			<Str sr="arg1" ve="3">true</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%td_button</lhs>
+					<op>2</op>
+					<rhs>Yes</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%coordinates</Str>
+			<Str sr="arg1" ve="3">latitude=%lat&amp;longitude=%lon</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act40" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%auto_play</Str>
+			<Str sr="arg1" ve="3">false</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%td_button</lhs>
+					<op>2</op>
+					<rhs>No</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act41" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Enable/Disable Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act42" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%duration</Str>
+			<Str sr="arg1" ve="3">120</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%duration</lhs>
+					<op>2</op>
+					<rhs>Unknown</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%duration</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act43" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">APT - Reminder Time</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act44" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">APT - Play Time</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act45" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">APT - Stop Time</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act46" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">APT - Widget Interaction</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act47" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Adhan Prayer Times setup complete!</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act48" ve="7">
+			<code>61</code>
+			<Int sr="arg0" val="100"/>
+		</Action>
+		<Action sr="act49" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg1" ve="3">Project setup complete!</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg12" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_toggle_check_box</nme>
+				<tint>-16729856</tint>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>366</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%gl_latitude
+1. Latitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%gl_longitude
+2. Longitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%gl_coordinates_accuracy
+3. Lat, Lon Accuracy
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%gl_altitude
+Altitude (meters)
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%gl_altitude_accuracy
+Altitude Accuracy
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%gl_bearing
+Bearing
+in the range 0.0–360.0; Horizontal direction of travel of this device; not related to the device orientation&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%gl_bearing_accuracy
+Bearing Accuracy
+In degrees&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%gl_map_url
+Google Maps URL
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%gl_coordinates
+Latitude and Longitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%gl_satellites
+Satellites
+The number of satellites used to derive the fix. May not always be available.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%gl_speed
+Speed
+In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%gl_speed_accuracy
+Speed
+In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%gl_time_seconds
+Time
+Time in seconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%gl_time_adjusted_milliseconds
+Time Adjusted Milliseconds
+Result of adding the current system time with the offset between the system time and the location time&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%gl_time_gnss_milliseconds
+Time GNSS Milliseconds
+Time in milliseconds since EPOCH the location was gotten synchrined to the device's location provider&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%gl_time_milliseconds
+Time Milliseconds
+Time in milliseconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%gl_time_offset_milliseconds
+Time Offset Milliseconds
+Time difference in milliseconds between the system time and the location time&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%gl_time_taken_millis
+Time Taken
+Time in milliseconds that it took for Tasker to get the location&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="30"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%coordinates</Str>
+			<Str sr="arg1" ve="3">latitude=%gl_latitude&amp;longitude=%gl_longitude</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>391</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%pd_type
+Type
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg3" ve="3">Updating prayer details...</Str>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="66"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="100"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_action_settings</nme>
+			<tint>-13727739</tint>
+		</Img>
+	</Task>
+	<Task sr="task501">
+		<cdate>1735408572464</cdate>
+		<edate>1750757945695</edate>
+		<id>501</id>
+		<nme>APT - Update Widget</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%icon</Str>
+			<Str sr="arg1" ve="3">android.resource://net.dinglisch.android.taskerm/drawable/mw_av_play_arrow</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>*Play Time*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%icon</Str>
+			<Str sr="arg1" ve="3">android.resource://net.dinglisch.android.taskerm/drawable/mw_av_play_arrow</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>(%this_prayer_time-%TIME)*10</lhs>
+					<op>8</op>
+					<rhs>%remind_before</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%widget.day_card_medium_nafilah.state</lhs>
+					<op>2</op>
+					<rhs>enabled</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>*Enable/Disable*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%offset</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%this_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>461</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""/&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">apt_day_card_medium_nafilah</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg13" ve="3">{
+  "children": [
+    {
+      "children": [
+        {
+          "bold": true,
+          "color": "%widget.day_card_medium_nafilah.colors.text_primary",
+          "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+          "text": "%this_prayer",
+          "textSize": "%widget.day_card_medium_nafilah.text_size_title",
+          "command": "day_card_medium_nafilah=:=preferences",
+          "commandPrefix": "APT",
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "isWeighted": true,
+          "type": "Spacer",
+          "useMaterialYouColors": true
+        },
+        {
+          "bold": true,
+          "color": "%widget.day_card_medium_nafilah.colors.text_primary",
+          "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+          "text": "%formatted",
+          "textSize": "%widget.day_card_medium_nafilah.text_size_title",
+          "type": "Text",
+          "useMaterialYouColors": true
+        }
+      ],
+      "backgroundColor": "#00000000",
+      "padding": {
+        "top": 15,
+        "bottom": 5,
+        "start": 10,
+        "end": 10
+      },
+      "size": {
+        "fillMaxWidth": true
+      },
+      "type": "Row",
+      "useMaterialYouColors": true
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "contentScale": "Fit",
+              "url": "%widget.day_card_medium_nafilah.icons.fajr",
+              "backgroundColor": "%widget.day_card_medium_nafilah.colors.icon_bg",
+              "cornerRadius": 100,
+              "padding": 10,
+              "size": "%widget.day_card_medium_nafilah.icon_size",
+              "type": "Image",
+              "useMaterialYouColors": true
+            },
+            {
+              "bold": true,
+              "color": "%widget.day_card_medium_nafilah.colors.text_primary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "%prayer_times.timings.Fajr",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_primary",
+              "padding": {
+                "top": 10
+              },
+              "type": "Text",
+              "useMaterialYouColors": true
+            },
+            {
+              "align": "Left",
+              "color": "%widget.day_card_medium_nafilah.colors.text_secondary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "Fajr",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_secondary",
+              "type": "Text",
+              "useMaterialYouColors": true
+            }
+          ],
+          "horizontalAlignment": "Center",
+          "backgroundColor": "%widget.day_card_medium_nafilah.colors.fajr_bg",
+          "cornerRadius": "%widget.day_card_medium_nafilah.corner_radius",
+          "isWeighted": true,
+          "padding": 10,
+          "tag": "Fajr",
+          "type": "Column",
+          "useMaterialYouColors": true
+        },
+        {
+          "children": [
+            {
+              "contentScale": "Fit",
+              "url": "%widget.day_card_medium_nafilah.icons.dhuhr",
+              "backgroundColor": "%widget.day_card_medium_nafilah.colors.icon_bg",
+              "cornerRadius": 100,
+              "padding": 10,
+              "size": "%widget.day_card_medium_nafilah.icon_size",
+              "type": "Image",
+              "useMaterialYouColors": true
+            },
+            {
+              "bold": true,
+              "color": "%widget.day_card_medium_nafilah.colors.text_primary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "%prayer_times.timings.Dhuhr",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_primary",
+              "padding": {
+                "top": 10
+              },
+              "type": "Text",
+              "useMaterialYouColors": true
+            },
+            {
+              "align": "Left",
+              "color": "%widget.day_card_medium_nafilah.colors.text_secondary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "Dhuhr",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_secondary",
+              "type": "Text",
+              "useMaterialYouColors": true
+            }
+          ],
+          "horizontalAlignment": "Center",
+          "backgroundColor": "%widget.day_card_medium_nafilah.colors.dhuhr_bg",
+          "cornerRadius": "%widget.day_card_medium_nafilah.corner_radius",
+          "isWeighted": true,
+          "padding": 10,
+          "tag": "Dhuhr",
+          "type": "Column",
+          "useMaterialYouColors": true
+        },
+        {
+          "children": [
+            {
+              "contentScale": "Fit",
+              "url": "%widget.day_card_medium_nafilah.icons.asr",
+              "backgroundColor": "%widget.day_card_medium_nafilah.colors.icon_bg",
+              "cornerRadius": 100,
+              "padding": 10,
+              "size": "%widget.day_card_medium_nafilah.icon_size",
+              "type": "Image",
+              "useMaterialYouColors": true
+            },
+            {
+              "bold": true,
+              "color": "%widget.day_card_medium_nafilah.colors.text_primary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "%prayer_times.timings.Asr",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_primary",
+              "padding": {
+                "top": 10
+              },
+              "type": "Text",
+              "useMaterialYouColors": true
+            },
+            {
+              "align": "Left",
+              "color": "%widget.day_card_medium_nafilah.colors.text_secondary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "Asr",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_secondary",
+              "type": "Text",
+              "useMaterialYouColors": true
+            }
+          ],
+          "horizontalAlignment": "Center",
+          "backgroundColor": "%widget.day_card_medium_nafilah.colors.fajr_bg",
+          "cornerRadius": "%widget.day_card_medium_nafilah.corner_radius",
+          "isWeighted": true,
+          "padding": 10,
+          "tag": "Asr",
+          "type": "Column",
+          "useMaterialYouColors": true
+        },
+        {
+          "children": [
+            {
+              "contentScale": "Fit",
+              "url": "%widget.day_card_medium_nafilah.icons.maghrib",
+              "backgroundColor": "%widget.day_card_medium_nafilah.colors.icon_bg",
+              "cornerRadius": 100,
+              "padding": 10,
+              "size": "%widget.day_card_medium_nafilah.icon_size",
+              "type": "Image",
+              "useMaterialYouColors": true
+            },
+            {
+              "bold": true,
+              "color": "%widget.day_card_medium_nafilah.colors.text_primary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "%prayer_times.timings.Maghrib",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_primary",
+              "padding": {
+                "top": 10
+              },
+              "type": "Text",
+              "useMaterialYouColors": true
+            },
+            {
+              "align": "Left",
+              "color": "%widget.day_card_medium_nafilah.colors.text_secondary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "Maghrib",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_secondary",
+              "type": "Text",
+              "useMaterialYouColors": true
+            }
+          ],
+          "horizontalAlignment": "Center",
+          "backgroundColor": "%widget.day_card_medium_nafilah.colors.fajr_bg",
+          "cornerRadius": "%widget.day_card_medium_nafilah.corner_radius",
+          "isWeighted": true,
+          "padding": 10,
+          "tag": "Maghrib",
+          "type": "Column",
+          "useMaterialYouColors": true
+        },
+        {
+          "children": [
+            {
+              "contentScale": "Fit",
+              "url": "%widget.day_card_medium_nafilah.icons.isha",
+              "backgroundColor": "%widget.day_card_medium_nafilah.colors.icon_bg",
+              "cornerRadius": 100,
+              "padding": 10,
+              "size": "%widget.day_card_medium_nafilah.icon_size",
+              "type": "Image",
+              "useMaterialYouColors": true
+            },
+            {
+              "bold": true,
+              "color": "%widget.day_card_medium_nafilah.colors.text_primary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "%prayer_times.timings.Isha",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_primary",
+              "padding": {
+                "top": 10
+              },
+              "type": "Text",
+              "useMaterialYouColors": true
+            },
+            {
+              "align": "Left",
+              "color": "%widget.day_card_medium_nafilah.colors.text_secondary",
+              "fontFamily": "%widget.day_card_medium_nafilah.font_family",
+              "text": "Isha",
+              "textSize": "%widget.day_card_medium_nafilah.text_size_secondary",
+              "type": "Text",
+              "useMaterialYouColors": true
+            }
+          ],
+          "horizontalAlignment": "Center",
+          "backgroundColor": "%widget.day_card_medium_nafilah.colors.fajr_bg",
+          "cornerRadius": "%widget.day_card_medium_nafilah.corner_radius",
+          "isWeighted": true,
+          "padding": 10,
+          "tag": "Isha",
+          "type": "Column",
+          "useMaterialYouColors": true
+        }
+      ],
+      "horizontalAlignment": "Start",
+      "backgroundColor": "#00000000",
+      "size": "fill",
+      "type": "Row",
+      "useMaterialYouColors": true
+    }
+  ],
+  "horizontalAlignment": "Center",
+  "verticalAlignment": "Top",
+  "backgroundColor": "%widget.day_card_medium_nafilah.colors.background",
+  "cornerRadius": "%widget.day_card_medium_nafilah.corner_radius",
+  "padding": {
+    "start": 5,
+    "end": 5
+  },
+  "size": {
+    "fillMaxWidth": true,
+    "height": 175
+  },
+  "type": "Column",
+  "useMaterialYouColors": true
+}</Str>
+			<Int sr="arg14" val="1"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg16" val="1"/>
+			<Str sr="arg2" ve="3">Custom</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%icon</Str>
+			<Str sr="arg1" ve="3">android.resource://net.dinglisch.android.taskerm/drawable/mw_av_play_arrow</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>*Stop Playing*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%TIME</lhs>
+					<op>6</op>
+					<rhs>%stop_time</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%icon</Str>
+			<Str sr="arg1" ve="3">android.resource://net.dinglisch.android.taskerm/drawable/mw_av_stop</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>*Set To Play*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%icon</Str>
+			<Str sr="arg1" ve="3">%widget.live_pill.icon</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%icon</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>461</code>
+			<se>false</se>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""/&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">apt_live_pill</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg13" ve="3">{
+  "children": [
+    {
+      "contentColor": "#00000000",
+      "enabled": true,
+      "icon": "%icon",
+      "backgroundColor": "%widget.live_pill.colors.icon_background",
+      "command": "live_pill=:=%icon",
+      "commandPrefix": "APT",
+      "type": "IconButton",
+      "useMaterialYouColors": true
+    },
+    {
+      "children": [
+        {
+          "bold": true,
+          "color": "%widget.live_pill.colors.text_primary",
+          "maxLines": 1,
+          "text": "%par1",
+          "textSize": "%widget.live_pill.text_size_primary",
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "bold": false,
+          "color": "%widget.live_pill.colors.text_secondary",
+          "maxLines": 1,
+          "text": "%par2",
+          "textSize": "%widget.live_pill.text_size_secondary",
+          "isWeighted": false,
+          "type": "Text",
+          "useMaterialYouColors": true
+        }
+      ],
+      "backgroundColor": "#00000000",
+      "padding": {
+        "start": 10
+      },
+      "type": "Column",
+      "useMaterialYouColors": true
+    }
+  ],
+  "horizontalAlignment": "Start",
+  "verticalAlignment": "Center",
+  "backgroundColor": "%widget.live_pill.colors.background",
+  "cornerRadius": 50,
+  "isWeighted": false,
+  "padding": {
+    "top": 5,
+    "bottom": 5,
+    "start": 12,
+    "end": 12
+  },
+  "size": {
+    "fillMaxWidth": true,
+    "height": 70
+  },
+  "type": "Row",
+  "useMaterialYouColors": true
+}</Str>
+			<Int sr="arg14" val="1"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg16" val="1"/>
+			<Str sr="arg2" ve="3">Custom</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%next_prayer</Str>
+			<Str sr="arg5" ve="3">%next_prayer_time</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%widget.live_pill.state</lhs>
+					<op>2</op>
+					<rhs>enabled</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%widget.day_list_small_nafilah.state</lhs>
+					<op>2</op>
+					<rhs>enabled</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>*Enable/Disable*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>461</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""/&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">apt_day_list_small_nafilah</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg13" ve="3">{
+  "scrolling": true,
+  "children": [
+    {
+      "children": [
+        {
+          "color": "%widget.day_list_small_nafilah.colors.text_primary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "linethrough": false,
+          "text": "Fajr",
+          "textSize": "%widget.day_list_small_nafilah.text_size_primary",
+          "command": "day_list_small_nafilah=:=preferences",
+          "padding": {
+            "end": 10
+          },
+          "type": "Text",
+          "useMaterialYouColors": true,
+          "visibility": "Visible"
+        },
+        {
+          "isWeighted": true,
+          "type": "Spacer",
+          "useMaterialYouColors": true
+        },
+        {
+          "align": "Right",
+          "color": "%widget.day_list_small_nafilah.colors.text_secondary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "linethrough": false,
+          "text": "%prayer_times.timings.Fajr",
+          "textSize": "%widget.day_list_small_nafilah.text_size_secondary",
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "checkedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "uncheckedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "isWeighted": false,
+          "type": "CheckBox",
+          "useMaterialYouColors": true,
+          "visibility": "%widget.day_list_small_nafilah.show_checkbox"
+        }
+      ],
+      "horizontalAlignment": "Start",
+      "verticalAlignment": "Center",
+      "backgroundColor": "%widget.day_list_small_nafilah.colors.fajr_bg",
+      "command": "day_list_small_nafilah=:=icon",
+      "isWeighted": false,
+      "padding": 5,
+      "size": {
+        "fillMaxWidth": true
+      },
+      "tag": "Fajr",
+      "type": "Row",
+      "useMaterialYouColors": true
+    },
+    {
+      "children": [
+        {
+          "color": "%widget.day_list_small_nafilah.colors.text_primary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "text": "Dhuhr",
+          "textSize": "%widget.day_list_small_nafilah.text_size_primary",
+          "padding": {
+            "end": 10
+          },
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "isWeighted": true,
+          "type": "Spacer",
+          "useMaterialYouColors": true
+        },
+        {
+          "align": "Right",
+          "color": "%widget.day_list_small_nafilah.colors.text_secondary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "text": "%prayer_times.timings.Dhuhr",
+          "textSize": "%widget.day_list_small_nafilah.text_size_secondary",
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "checkedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "uncheckedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "isWeighted": false,
+          "type": "CheckBox",
+          "useMaterialYouColors": true,
+          "visibility": "%widget.day_list_small_nafilah.show_checkbox"
+        }
+      ],
+      "horizontalAlignment": "Start",
+      "verticalAlignment": "Center",
+      "backgroundColor": "%widget.day_list_small_nafilah.colors.dhuhr_bg",
+      "isWeighted": false,
+      "padding": 5,
+      "size": {
+        "fillMaxWidth": true
+      },
+      "tag": "Dhuhr",
+      "type": "Row",
+      "useMaterialYouColors": true
+    },
+    {
+      "children": [
+        {
+          "color": "%widget.day_list_small_nafilah.colors.text_primary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "text": "Asr",
+          "textSize": "%widget.day_list_small_nafilah.text_size_primary",
+          "padding": {
+            "end": 10
+          },
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "isWeighted": true,
+          "type": "Spacer",
+          "useMaterialYouColors": true
+        },
+        {
+          "align": "Right",
+          "color": "%widget.day_list_small_nafilah.colors.text_secondary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "text": "%prayer_times.timings.Asr",
+          "textSize": "%widget.day_list_small_nafilah.text_size_secondary",
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "checkedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "uncheckedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "isWeighted": false,
+          "type": "CheckBox",
+          "useMaterialYouColors": true,
+          "visibility": "%widget.day_list_small_nafilah.show_checkbox"
+        }
+      ],
+      "horizontalAlignment": "Start",
+      "verticalAlignment": "Center",
+      "backgroundColor": "%widget.day_list_small_nafilah.colors.asr_bg",
+      "isWeighted": false,
+      "padding": 5,
+      "size": {
+        "fillMaxWidth": true
+      },
+      "tag": "Asr",
+      "type": "Row",
+      "useMaterialYouColors": true
+    },
+    {
+      "children": [
+        {
+          "color": "%widget.day_list_small_nafilah.colors.text_primary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "text": "Maghrib",
+          "textSize": "%widget.day_list_small_nafilah.text_size_primary",
+          "padding": {
+            "end": 10
+          },
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "isWeighted": true,
+          "type": "Spacer",
+          "useMaterialYouColors": true
+        },
+        {
+          "align": "Right",
+          "color": "%widget.day_list_small_nafilah.colors.text_secondary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "text": "%prayer_times.timings.Maghrib",
+          "textSize": "%widget.day_list_small_nafilah.text_size_secondary",
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "checkedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "uncheckedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "isWeighted": false,
+          "type": "CheckBox",
+          "useMaterialYouColors": true,
+          "visibility": "%widget.day_list_small_nafilah.show_checkbox"
+        }
+      ],
+      "horizontalAlignment": "Start",
+      "verticalAlignment": "Center",
+      "backgroundColor": "%widget.day_list_small_nafilah.colors.maghrib_bg",
+      "isWeighted": false,
+      "padding": 5,
+      "size": {
+        "fillMaxWidth": true
+      },
+      "tag": "Maghrib",
+      "type": "Row",
+      "useMaterialYouColors": true
+    },
+    {
+      "children": [
+        {
+          "color": "%widget.day_list_small_nafilah.colors.text_primary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "text": "Isha",
+          "textSize": "%widget.day_list_small_nafilah.text_size_primary",
+          "padding": {
+            "end": 10
+          },
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "isWeighted": true,
+          "type": "Spacer",
+          "useMaterialYouColors": true
+        },
+        {
+          "align": "Right",
+          "color": "%widget.day_list_small_nafilah.colors.text_secondary",
+          "fontFamily": "%widget.day_list_small_nafilah.font_family",
+          "text": "%prayer_times.timings.Isha",
+          "textSize": "%widget.day_list_small_nafilah.text_size_secondary",
+          "type": "Text",
+          "useMaterialYouColors": true
+        },
+        {
+          "checkedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "uncheckedColor": "%widget.day_card_medium_nafilah.colors.text_secondary",
+          "isWeighted": false,
+          "type": "CheckBox",
+          "useMaterialYouColors": true,
+          "visibility": "%widget.day_list_small_nafilah.show_checkbox"
+        }
+      ],
+      "horizontalAlignment": "Start",
+      "verticalAlignment": "Center",
+      "backgroundColor": "%widget.day_list_small_nafilah.colors.isha_bg",
+      "isWeighted": false,
+      "padding": 5,
+      "size": {
+        "fillMaxWidth": true
+      },
+      "tag": "Isha",
+      "type": "Row",
+      "useMaterialYouColors": true
+    }
+  ],
+  "horizontalAlignment": "Center",
+  "verticalAlignment": "Top",
+  "backgroundColor": "%widget.day_list_small_nafilah.colors.background",
+  "commandPrefix": "APT",
+  "cornerRadius": "%widget.day_list_small_nafilah.corner_radius",
+  "isWeighted": false,
+  "padding": 10,
+  "size": "fill",
+  "type": "Column",
+  "useMaterialYouColors": true
+}</Str>
+			<Int sr="arg14" val="1"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg16" val="1"/>
+			<Str sr="arg2" ve="3">Custom</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task502">
+		<cdate>1720627159092</cdate>
+		<edate>1750757152922</edate>
+		<id>502</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%duration</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%play_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">%this_prayer at %formatted</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%this_prayer time</Str>
+			<Str sr="arg3" ve="3">Started: %formatted</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%auto_play</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Set To Play</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">%this_prayer time</Str>
+			<Str sr="arg1" ve="3">Started: %formatted</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg12" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_action_chrome_reader_mode</nme>
+				<tint>-16729856</tint>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Play</label>
+				<Action sr="action" ve="7">
+					<code>130</code>
+					<Str sr="arg0" ve="3">APT - Set To Play</Str>
+					<Int sr="arg1">
+						<var>%priority</var>
+					</Int>
+					<Int sr="arg10" val="1"/>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3"/>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+					<Int sr="arg6" val="0"/>
+					<Str sr="arg7" ve="3"/>
+					<Int sr="arg8" val="0"/>
+					<Int sr="arg9" val="0"/>
+				</Action>
+			</ListElementItem>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task503">
+		<cdate>1718884627073</cdate>
+		<edate>1750606440113</edate>
+		<id>503</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%duration</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%this_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%auto_play</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%stop_time</Str>
+			<Str sr="arg1" ve="3">%formatted</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="2"/>
+			<Str sr="arg11" ve="3">-%remind_before</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%next_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">HH.mm</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%reminder_time</Str>
+			<Str sr="arg1" ve="3">%formatted</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">%this_prayer at %formatted</Str>
+			<Str sr="arg1" ve="3">Hijri: %prayer_times.date.hijri</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg12" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_action_chrome_reader_mode</nme>
+				<tint>-16729856</tint>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Play at %formatted</label>
+				<Action sr="action" ve="7">
+					<code>130</code>
+					<Str sr="arg0" ve="3">APT - Set To Play</Str>
+					<Int sr="arg1">
+						<var>%priority</var>
+					</Int>
+					<Int sr="arg10" val="1"/>
+					<Str sr="arg2" ve="3">%this_prayer at %formatted</Str>
+					<Str sr="arg3" ve="3"/>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+					<Int sr="arg6" val="0"/>
+					<Str sr="arg7" ve="3"/>
+					<Int sr="arg8" val="0"/>
+					<Int sr="arg9" val="0"/>
+				</Action>
+			</ListElementItem>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">%this_prayer at %formatted</Str>
+			<Str sr="arg1" ve="3">Hijri: %prayer_times.date.hijri</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg12" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_action_chrome_reader_mode</nme>
+				<tint>-16729856</tint>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Will play at %formatted</label>
+			</ListElementItem>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%this_prayer will play at %formatted</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%this_prayer at %formatted</Str>
+			<Str sr="arg3" ve="3">Hijri: %prayer_times.date.hijri</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">let ptObject = JSON.parse(prayer_times);
+let times = Object.values(ptObject.timings);
+
+play_time = this_prayer_time;
+
+let index = times.indexOf(this_prayer_time);
+
+if (index === times.length - 1) {
+    const json = JSON.parse(readFile("Tasker/database/Adhan Prayer Times/prayer_times.json"));
+    const day = global('DAYM');
+
+    if (day === json.length) {
+        performTask('Update Prayer Details');
+    } else {
+        ptObject = json[day];
+        times = Object.values(ptObject.timings);
+        next_prayer_time = times[0];
+    }
+} else {
+    next_prayer_time = times.find(time =&gt; time &gt; this_prayer_time);
+}
+
+next_prayer = Object.entries(ptObject.timings)
+    .find(([, value]) =&gt; value === next_prayer_time)?.[0];
+
+prayer_times = JSON.stringify(ptObject, null, 4);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg11" ve="3">%duration</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%this_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">HH.mm</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task504">
+		<cdate>1719408675429</cdate>
+		<edate>1750757240879</edate>
+		<id>504</id>
+		<nme>APT - Get Prayer Timings For Any Date</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>390</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Date</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="120"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>391</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%pd_type
+Type
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg3" ve="3">Geting timings...</Str>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="66"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="100"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3"/>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%input</Str>
+			<Str sr="arg3" ve="3">yyyy-MM-dd</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">dd-MM-yyyy</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>339</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_data
+Data
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">http://api.aladhan.com/v1/timings/%formatted?%coordinates</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="60"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%json</Str>
+			<Str sr="arg1" ve="3">%http_data</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">let jsonObject = JSON.parse(json);
+
+var picked_date = jsonObject.data.date.readable;
+
+var picked_date_hijri = `${jsonObject.data.date.hijri.day} ${jsonObject.data.date.hijri.month.en} ${jsonObject.data.date.hijri.year}`;
+
+var list = [];
+
+jsonObject.data.timings = Object.entries(jsonObject.data.timings).sort((a, b) =&gt; {
+    const [hoursA, minutesA] = a[1].split(':').map(Number);
+    const [hoursB, minutesB] = b[1].split(':').map(Number);
+    const timeA = hoursA * 60 + minutesA;
+    const timeB = hoursB * 60 + minutesB;
+    return timeA - timeB;
+});
+
+jsonObject.data.timings = Object.fromEntries(jsonObject.data.timings);
+
+for (let key in jsonObject.data.timings) {
+    if
+(jsonObject.data.timings.hasOwnProperty(key)) {
+        let time = jsonObject.data.timings[key];
+        list.push(`${key}: ${time}`);
+    }
+}
+
+list = list.join(',');</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>391</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%pd_type
+Type
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="66"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="100"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_long
+Long
+true if item was long clicked, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ld_selected_index
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg13" ve="3">&lt;font color="grey"&gt;%picked_date_hijri&lt;/font&gt;</Str>
+			<Str sr="arg2" ve="3">%picked_date</Str>
+			<Str sr="arg3" ve="3">%list</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="120"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_av_play_circle_filled</nme>
+			<tint>-13727739</tint>
+		</Img>
+	</Task>
+	<Task sr="task508">
+		<cdate>1720681546647</cdate>
+		<edate>1750757539358</edate>
+		<id>508</id>
+		<nme>APT - Set To Play</nme>
+		<pri>1000</pri>
+		<Action sr="act0" ve="7">
+			<code>512</code>
+			<se>false</se>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>*Play at*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%this_prayer time has passed.</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>590</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%audio</Str>
+			<Str sr="arg1" ve="3">/</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">Playing %this_prayer</Str>
+			<Str sr="arg3" ve="3">%audio(&lt;)</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Playing %this_prayer</Str>
+			<Str sr="arg1" ve="3">%audio(&lt;)</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg12" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_action_chrome_reader_mode</nme>
+				<tint>-16729856</tint>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Stop</label>
+				<Action sr="action" ve="7">
+					<code>130</code>
+					<Str sr="arg0" ve="3">APT - Stop Playing</Str>
+					<Int sr="arg1">
+						<var>%priority</var>
+					</Int>
+					<Int sr="arg10" val="1"/>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3"/>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+					<Int sr="arg6" val="0"/>
+					<Str sr="arg7" ve="3"/>
+					<Int sr="arg8" val="0"/>
+					<Int sr="arg9" val="0"/>
+				</Action>
+			</ListElementItem>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>445</code>
+			<Str sr="arg0" ve="3">%audio</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="3"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Stop Playing</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%auto_play</Str>
+			<Str sr="arg1" ve="3">true</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Will play %par1 (Auto play enabled)</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>137</code>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<bool1>Or</bool1>
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>2</op>
+					<rhs>*play*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>*nbutton=Play*</rhs>
+				</Condition>
+				<Condition sr="c2" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>*Play Time*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">%this_prayer time</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TIME</lhs>
+					<op>7</op>
+					<rhs>%stop_time</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task509">
+		<cdate>1748673405422</cdate>
+		<edate>1750757954310</edate>
+		<id>509</id>
+		<nme>APT - Toggle Auto Play</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%auto_play</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%auto_play</Str>
+			<Str sr="arg1" ve="3">true</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Auto play enabled</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%auto_play</Str>
+			<Str sr="arg1" ve="3">false</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Auto play disabled</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task510">
+		<cdate>1748357362170</cdate>
+		<edate>1750757546224</edate>
+		<id>510</id>
+		<nme>APT - Contact Creator</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>104</code>
+			<Str sr="arg0" ve="3">https://t.me/android_automation_group</Str>
+			<App sr="arg1"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task511">
+		<cdate>1720597730128</cdate>
+		<edate>1750758027807</edate>
+		<id>511</id>
+		<nme>APT - Stop Playing</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>449</code>
+			<se>false</se>
+			<Int sr="arg0" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">Playing %this_prayer</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TIME</lhs>
+					<op>6</op>
+					<rhs>%stop_time</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%duration</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%play_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">%this_prayer time</Str>
+			<Str sr="arg1" ve="3">Started: %formatted</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg12" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_action_chrome_reader_mode</nme>
+				<tint>-16729856</tint>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Play</label>
+				<Action sr="action" ve="7">
+					<code>130</code>
+					<Str sr="arg0" ve="3">APT - Set To Play</Str>
+					<Int sr="arg1">
+						<var>%priority</var>
+					</Int>
+					<Int sr="arg10" val="1"/>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3"/>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+					<Int sr="arg6" val="0"/>
+					<Str sr="arg7" ve="3"/>
+					<Int sr="arg8" val="0"/>
+					<Int sr="arg9" val="0"/>
+				</Action>
+			</ListElementItem>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%this_prayer time</Str>
+			<Str sr="arg3" ve="3">Started: %formatted</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%offset</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%this_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%this_prayer at %formatted</Str>
+			<Str sr="arg3" ve="3">Hijri: %prayer_times.date.hijri</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task515">
+		<cdate>1718814793609</cdate>
+		<edate>1750831857332</edate>
+		<id>515</id>
+		<nme>APT - Update Prayer Details</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>341</code>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">%connection</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%connection</lhs>
+					<op>2</op>
+					<rhs>none</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">Tasker/database/Adhan Prayer Times/prayer_times.json</Str>
+			<Str sr="arg1" ve="3"> </Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%exist</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">let jsonObject = JSON.parse(json).data.map(item =&gt; ({
+    date: {
+        readable: item.date.readable,
+        hijri: `${item.date.hijri.day} ${item.date.hijri.month.en} ${item.date.hijri.year}`
+    },
+    timings: Object.fromEntries(
+        Object.entries(item.timings)
+            .filter(([key]) =&gt; !["Firstthird", "Midnight", "Lastthird", "Imsak", "Sunrise", "Sunset"].includes(key))
+            .map(([key, value]) =&gt; [key, value.replace(/ \(.+\)/, '').replace(/:/g, '.')])
+    )
+}));
+
+if (day_offset == 0) {
+    prayer_times = jsonObject[global('DAYM') - 1];
+    let times = Object.values(prayer_times.timings);
+
+    next_prayer_time = times.find(time =&gt; time &gt; global('TIME'));
+
+    if (!next_prayer_time) {
+        let now = new Date();
+        let nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+        let last_day = nextMonth.getDate();
+
+        if (global('DAYM') == last_day) {
+            if (now.getMonth() == 11) {
+                let nextYear = new Date(now.getFullYear() + 1, 0, 1);
+                prayer_times = jsonObject.find(item =&gt; item.date.readable === nextYear.toISOString().split('T')[0]);
+                day_offset = 0;
+            } else {
+                day_offset = 1;
+            }
+        } else {
+            prayer_times = jsonObject[global('DAYM')];
+            times = Object.values(prayer_times.timings);
+            next_prayer_time = times[0];
+        }
+    }
+} else {
+    prayer_times = jsonObject[0];
+    times = Object.values(prayer_times.timings);
+    next_prayer_time = times[0];
+    day_offset = 0;
+}
+
+this_prayer_time = next_prayer_time;
+this_prayer = Object.entries(prayer_times.timings).find(([, value]) =&gt; value === this_prayer_time)?.[0];
+
+writeFile("Tasker/database/Adhan Prayer Times/prayer_times.json", JSON.stringify(jsonObject), 0);
+prayer_times = JSON.stringify(prayer_times, null, 4);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="2"/>
+			<Str sr="arg11" ve="3">-%remind_before</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%next_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">HH.mm</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%reminder_time</Str>
+			<Str sr="arg1" ve="3">%formatted</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">aaa</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%day_offset</lhs>
+					<op>8</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg1" ve="3">Updated prayer details!</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg12" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_action_check_circle</nme>
+				<tint>-16729856</tint>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="5"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller()</lhs>
+					<op>3</op>
+					<rhs>*Project Setup*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%duration</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%this_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%this_prayer at %formatted</Str>
+			<Str sr="arg3" ve="3">Hijri: %prayer_times.date.hijri</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg1" ve="3">Update required!</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3">Adhan Prayer Times</Str>
+			<Str sr="arg12" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_action_update</nme>
+				<tint>-3932160</tint>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Update</label>
+				<Action sr="action" ve="7">
+					<code>130</code>
+					<Str sr="arg0" ve="3">APT - Update Prayer Details</Str>
+					<Int sr="arg1">
+						<var>%priority</var>
+					</Int>
+					<Int sr="arg10" val="1"/>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3"/>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+					<Int sr="arg6" val="0"/>
+					<Str sr="arg7" ve="3"/>
+					<Int sr="arg8" val="0"/>
+					<Int sr="arg9" val="0"/>
+				</Action>
+			</ListElementItem>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">Adhan Prayer Times</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%day_offset</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>394</code>
+			<label>aaa</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg10" val="4"/>
+			<Str sr="arg11" ve="3">%day_offset</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">y/MM</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>339</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_data
+Data
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">http://api.aladhan.com/v1/calendar/%formatted?%coordinates</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="60"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%json</Str>
+			<Str sr="arg1" ve="3">%http_data</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="5"/>
+			<Str sr="arg1" ve="3">Tasker/database/Adhan Prayer Times/prayer_times.json</Str>
+			<Str sr="arg2" ve="3">%exist</Str>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task517">
+		<cdate>1734095715901</cdate>
+		<edate>1750758441970</edate>
+		<id>517</id>
+		<nme>APT - Customise Widget</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller()</lhs>
+					<op>2</op>
+					<rhs>ui/*Project Setup*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_long
+Long
+true if item was long clicked, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ld_selected_index
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg13" ve="3">Each widget can be customized uniquely.</Str>
+			<Str sr="arg2" ve="3">Select Widget to Customize</Str>
+			<Str sr="arg3" ve="3">live_pill,day_list_small_nafilah,day_card_medium_nafilah</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">Done</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="120"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>137</code>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_button</lhs>
+					<op>2</op>
+					<rhs>Done</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>*Color*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%color</Str>
+			<Str sr="arg1" ve="3">widget.%par1.colors.%var</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%colors</Str>
+			<Str sr="arg1" ve="3">&lt;span style="background-color:widgetBackground"&gt;Default (widgetBackground)&lt;/span&gt;,&lt;span style="background-color:#00000000"&gt;Transparent (#00000000)&lt;/span&gt;,&lt;span style="background-color:#B0000000"&gt;Black-Gray (#B0000000)&lt;/span&gt;,&lt;span style="background-color:#111827"&gt;Deep Slate (#111827)&lt;/span&gt;,&lt;span style="background-color:#312E81"&gt;Midnight Indigo (#312E81)&lt;/span&gt;,&lt;span style="background-color:#0F766E"&gt;Muted Teal (#0F766E)&lt;/span&gt;,&lt;span style="background-color:#4C1D95"&gt;Ash Violet (#4C1D95)&lt;/span&gt;,&lt;span style="background-color:#1C1F1A"&gt;Olive Night (#1C1F1A)&lt;/span&gt;,&lt;span style="background-color:#3B2E4A"&gt;Shadow Plum (#3B2E4A)&lt;/span&gt;,&lt;span style="background-color:#22575E"&gt;Faded Teal (#22575E)&lt;/span&gt;,&lt;span style="background-color:#4A4E52"&gt;Foggy Charcoal (#4A4E52)&lt;/span&gt;,&lt;span style="background-color:#3C365E"&gt;Smoky Indigo (#3C365E)&lt;/span&gt;,&lt;span style="background-color:#3A4A42"&gt;Slate Moss (#3A4A42)&lt;/span&gt;,&lt;span style="background-color:#2d1d36"&gt;Ember Grape (#2d1d36)&lt;/span&gt;,&lt;span style="background-color:#3d2e56"&gt;Twilight Fog (#3d2e56)&lt;/span&gt;,&lt;span style="background-color:#3c1194"&gt;Dusk Lavender (#3c1194)&lt;/span&gt;,&lt;span style="background-color:#27372c"&gt;Moonlit Moss (#27372c)&lt;/span&gt;,&lt;span style="background-color:#443974"&gt;Ashen Orchid (#443974)&lt;/span&gt;,&lt;span style="background-color:#036752"&gt;Misty Pine (#036752)&lt;/span&gt;,&lt;span style="background-color:#2f322e"&gt;Obsidian Bloom (#2f322e)&lt;/span&gt;,&lt;span style="background-color:#665C1E"&gt;Mustard Bronze (#665C1E)&lt;/span&gt;,&lt;span style="background-color:#6F4322"&gt;Rust Bronze (#6F4322)&lt;/span&gt;,&lt;span style="background-color:#8B1E3F"&gt;Crimson Plum (#8B1E3F)&lt;/span&gt;,&lt;span style="background-color:#5E1B1B"&gt;Charred Ruby (#5E1B1B)&lt;/span&gt;,Custom,Input Color Name</Str>
+			<Str sr="arg2" ve="3">,</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>*Background Color*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%colors</Str>
+			<Str sr="arg1" ve="3">&lt;span style="color:#FFFFFF"&gt;Full White (#FFFFFF)&lt;/span&gt;,&lt;span style="color:#F8F8F8"&gt;Ivory White (#F8F8F8)&lt;/span&gt;,&lt;span style="color:#D1D5DB"&gt;Cool Light Gray (#D1D5DB)&lt;/span&gt;,&lt;span style="color:#A5D8FF"&gt;Sky Blue Tint (#A5D8FF)&lt;/span&gt;,&lt;span style="color:#BBF7D0"&gt;Soft Mint (#BBF7D0)&lt;/span&gt;,&lt;span style="color:#FBCFE8"&gt;Muted Rose (#FBCFE8)&lt;/span&gt;,&lt;span&gt;Custom&lt;/span&gt;,Input Color Name</Str>
+			<Str sr="arg2" ve="3">,</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>Text Color Primary/Text Color Secondary</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%current</Str>
+			<Str sr="arg1" ve="3">%colors($?*%%color*)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%current</Str>
+			<Str sr="arg1" ve="3">%%color</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%current</lhs>
+					<op>2</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<pref>colors</pref>
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_long
+Long
+true if item was long clicked, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ld_selected_index
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3">Currently set: %current
+&lt;br&gt;&lt;br&gt;
+&lt;font color="grey"&gt;Note: To adjust transparency of any color, first select that color then run task again to select custom color.&lt;/font&gt;</Str>
+			<Str sr="arg2" ve="3">%ld_selected</Str>
+			<Str sr="arg3" ve="3">%colors</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="120"/>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>*Custom*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>390</code>
+			<se>false</se>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Color</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%%color</Str>
+			<Int sr="arg5" val="120"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>137</code>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_button</lhs>
+					<op>2</op>
+					<rhs>Done</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%%var</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>396</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%mt_match_found
+Is Match
+true if there was a match, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%mt_match
+Match
+Can also be accessed as an array&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">%colors_ld_selected</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">($%var)</Str>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%var
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Color</Str>
+			<Str sr="arg2" ve="3">e.g. primary, secondary, onPrimaryContainer, etc
+
+Currently set: %%color</Str>
+			<Str sr="arg3" ve="3">primary</Str>
+			<Int sr="arg4" val="120"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Str sr="arg8" ve="3">%%var</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%colors_ld_selected</lhs>
+					<op>2</op>
+					<rhs>Input Color Name</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act25" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%ld_selected set to %%var</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="1"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">%%var</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act27" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%current</Str>
+			<Str sr="arg1" ve="3">widget.%par1.%var</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act28" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>Font Family</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act29" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_long
+Long
+true if item was long clicked, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ld_selected_index
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg13" ve="3">Currently set: %%current</Str>
+			<Str sr="arg2" ve="3">Font Family</Str>
+			<Str sr="arg3" ve="3">Serif,SansSerif,Monospace,Cursive</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="120"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">%ld_selected</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act30" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%font_family</Str>
+			<Str sr="arg1" ve="3">%ld_selected</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act31" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Font family set to %font_family</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">%bg_color</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act32" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act33" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>*Icon</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act34" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>1</op>
+					<rhs>Icon</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act35" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%current</Str>
+			<Str sr="arg1" ve="3">widget.%par1.icons.%var</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act36" ve="7">
+			<code>390</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Image</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%%current</Str>
+			<Int sr="arg5" val="120"/>
+		</Action>
+		<Action sr="act37" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%%var</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act38" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%%var</Str>
+			<Str sr="arg1" ve="3">/</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act39" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Icon set to %%var(&lt;)</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">%bg_color</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act40" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act41" ve="7">
+			<code>390</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Image</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%%current</Str>
+			<Int sr="arg5" val="120"/>
+		</Action>
+		<Action sr="act42" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%icon</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act43" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%icon</Str>
+			<Str sr="arg1" ve="3">/</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act44" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Icon set to %icon(&lt;)</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">%bg_color</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act45" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act46" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act47" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>Corner Radius/Icon Size/Text Size*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act48" ve="7">
+			<code>390</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Number</Str>
+			<Str sr="arg2" ve="3">%ld_selected</Str>
+			<Str sr="arg3" ve="3">Currently set: %%current</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="120"/>
+		</Action>
+		<Action sr="act49" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%%var</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%elements</Str>
+			<Str sr="arg1" ve="3">Background Color,Icon Background Color,Text Color Primary,Text Color Secondary,Font Family,Corner Radius,Icon,Icon Size,Text Size Primary,Text Size Secondary</Str>
+			<Str sr="arg2" ve="3">,</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>2</op>
+					<rhs>live_pill</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act50" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%ld_selected set to %%var</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">%bg_color</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act51" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act52" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>Toggle Checkbox Visibility</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act53" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%widget.day_list_small_nafilah.show_checkbox</lhs>
+					<op>2</op>
+					<rhs>yes</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act54" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%show_checkbox</Str>
+			<Str sr="arg1" ve="3">no</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act55" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act56" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%show_checkbox</Str>
+			<Str sr="arg1" ve="3">yes</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act57" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act58" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Show checkbox: %show_checkbox</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">%bg_color</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act59" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%elements</Str>
+			<Str sr="arg1" ve="3">Background Color,Fajr Background Color,Dhuhr Background Color,Asr Background Color,Maghrib Background Color,Isha Background Color,Text Color Primary,Text Color Secondary,Font Family,Corner Radius,Text Size Primary,Text Size Secondary,Toggle Checkbox Visibility</Str>
+			<Str sr="arg2" ve="3">,</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>2</op>
+					<rhs>day_list_small_nafilah</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act60" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">const widgetObject = JSON.parse(widget);
+const layout = local('par1');
+const target = widgetObject[layout];
+
+['background','icon_bg','fajr_bg','dhuhr_bg','asr_bg','maghrib_bg','isha_bg','text_primary','text_secondary'].forEach(field =&gt; {
+  if (typeof window[field] === "string" &amp;&amp; !window[field].startsWith("%")) {
+    target.colors[field] = window[field];
+  }
+});
+
+['font_family','corner_radius','icon_size','text_size_title','text_size_primary','text_size_secondary','show_checkbox'].forEach(field =&gt; {
+  if (typeof window[field] === "string" &amp;&amp; !window[field].startsWith("%")) {
+    target[field] = window[field];
+  }
+});
+
+['fajr','dhuhr','asr','maghrib','isha'].forEach(field =&gt; {
+  if (typeof window[field] === "string" &amp;&amp; !window[field].startsWith("%")) {
+    target.icons[field] = window[field];
+  }
+});
+
+widget = JSON.stringify(widgetObject, null, 4);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act61" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%offset</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%this_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act62" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%this_prayer at %formatted</Str>
+			<Str sr="arg3" ve="3">Hijri: %prayer_times.date.hijri</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act63" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%var</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act64" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>354</code>
+			<Str sr="arg0" ve="3">%elements</Str>
+			<Str sr="arg1" ve="3">Background Color,Icon Background Color,Fajr Background Color,Dhuhr Background Color,Asr Background Color,Maghrib Background Color,Isha Background Color,Text Color Primary,Text Color Secondary,Font Family,Corner Radius,Text Size Title,Text Size Primary,Text Size Secondary,Fajr Icon,Dhuhr Icon,Asr Icon,Maghrib Icon,Isha Icon,Icon Size</Str>
+			<Str sr="arg2" ve="3">,</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>2</op>
+					<rhs>day_card_medium_nafilah</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_long
+Long
+true if item was long clicked, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ld_selected_index
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3">%par1</Str>
+			<Str sr="arg2" ve="3">Customize Widget</Str>
+			<Str sr="arg3" ve="3">%elements()</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">Done</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="120"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">let element_codes = {
+  "Background Color": "background",
+  "Icon Background Color": "icon_bg",
+  "Fajr Background Color": "fajr_bg",
+  "Dhuhr Background Color": "dhuhr_bg",
+  "Asr Background Color": "asr_bg",
+  "Maghrib Background Color": "maghrib_bg",
+  "Isha Background Color": "isha_bg",
+  "Text Color Primary": "text_primary",
+  "Text Color Secondary": "text_secondary",
+  "Font Family": "font_family",
+  "Corner Radius": "corner_radius",
+  "Icon": "icon",
+  "Fajr Icon": "fajr",
+  "Dhuhr Icon": "dhuhr",
+  "Asr Icon": "asr",
+  "Maghrib Icon": "maghrib",
+  "Isha Icon": "isha",
+  "Icon Size": "icon_size",
+  "Goal": "goal",
+  "Text Size Title": "text_size_title",
+  "Text Size Primary": "text_size_primary",
+  "Text Size Secondary": "text_size_secondary"
+};
+
+setLocal("var", element_codes[ld_selected]);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_device_widgets</nme>
+			<tint>-13727739</tint>
+		</Img>
+	</Task>
+	<Task sr="task518">
+		<cdate>1749552126478</cdate>
+		<edate>1750832436272</edate>
+		<id>518</id>
+		<nme>APT - Enable/Disable Widget</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">const widgetObject = JSON.parse(widget);
+var all = Object.keys(widgetObject).join(',');
+var enabled = Object.keys(widgetObject)
+                         .filter(key =&gt; widgetObject[key].state === 'enabled')
+                         .join(',');
+widget = JSON.stringify(widgetObject, null, 4);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_selected()
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected_index()
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg13" ve="3">Disabling a widget mean it won't be updated anymore. You'll have to manually remove it from the homescreen if already placed.</Str>
+			<Str sr="arg2" ve="3">Enable/Disable Widget</Str>
+			<Str sr="arg3" ve="3">%all</Str>
+			<Str sr="arg4" ve="3">%enabled</Str>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="120"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_button</lhs>
+					<op>2</op>
+					<rhs>ok</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>354</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%selected</Str>
+			<Str sr="arg1" ve="3">%ld_selected()</Str>
+			<Str sr="arg2" ve="3">,</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%selected</Str>
+			<Str sr="arg1" ve="3">[]</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected(#)</lhs>
+					<op>2</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">const widgetObject = JSON.parse(widget);
+for (let key in widgetObject) {
+  widgetObject[key].state = selected.includes(key) ? "enabled" : "disabled";
+}
+widget = JSON.stringify(widgetObject, null, 4);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Enabled %selected(#) widget: %selected()</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">%widget.live_pill.colors.background</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>394</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%formatted
+00. Formatted
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%dt_millis
+1. MilliSeconds
+Milliseconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%dt_seconds
+2. Seconds
+Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%dt_day_of_month
+3. Day Of Month
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%dt_month_of_year
+4. Month Of Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%dt_year
+5. Year
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg11" ve="3">%duration</Str>
+			<Str sr="arg12" ve="3"/>
+			<Str sr="arg2" ve="3">%this_prayer_time</Str>
+			<Str sr="arg3" ve="3">HH.mm</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">hh.mm a</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">APT - Update Widget</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%this_prayer at %formatted</Str>
+			<Str sr="arg3" ve="3">Hijri: %prayer_times.date.hijri</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+</TaskerData>
